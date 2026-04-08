@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/*
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+/*  css reset */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+}
+
+body {
+    font-family:"Inter", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    padding: 12px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1919;
+    border-bottom: 5px solid rgb(46, 111, 48);
+}
+
+header div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header span {
+    color: #dddddd;
+    font-weight: bolder;
+    font-size: 35px;
+    text-align:center;
+}
+
+.nav-container {
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(127, 177, 129);
+}
+
+.nav-content {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+ul li .nav-item {
+    padding: 5px 5px;
+    border-radius: 8px;
+    color: #1a1a1a;
+    font-weight: bolder;
+}
+
+ul li:hover {
+    .nav-item {
+        transition: 0.3s;
+        color: #dddddd;
+        text-shadow: 0px 0px 10px rgba(26, 25, 25, 0.439);
+    }
+}
+
+/* imagens */
+
+.container-column-center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-container {
+    width: 80%;
+    padding: 20px;
+}
+
+.img {
+    border-radius: 2px;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#container-logo {
+    width: auto;
+}
+
+#content-logo {
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    width: 190px;
+    z-index: initial;
+    /*height: 90px;*/
+}
+
+/* main */
+
+main {
+    width: 100%;
+    background-color: #ededede7;
+    display: flex;
+    justify-content: center;
+}
+
+main .main-content {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(248, 248, 248, 0.756);
+    text-align: left;
+    box-shadow: 0px 0px 5px 5px #70707038; /*, -10px 0 5px -5px #70707038;*/
+    padding: 40px 60px;
+    margin: 50px 50px;
+    border-radius: 3px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    font-size: 18px;
+}
+
+/* section */
+
+section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.section-gap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+/* tabela */
+
+.section-tabela {
+    display: flex;
+    align-items: center;
+}
+
+.content-tabela {
+    width: 100%;
+    text-align: center;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+#tabela {
+    min-width: 250px;
+    width: 100%;
+}
+
+td {
+    border: 1px solid #7272729d;
+    border-radius: 2px;
+}
+
+th {
+    width: 20%;
+    border: 1px solid #7272729d;
+    border-radius: 2px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0px;
+    row-gap: 8px;
+    color: #dddddd;
+    background-color: #1a1919;
+    border-top: 5px solid #2e6f30;
+}
+
+footer div nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer div nav ul li a {
+    padding: 0px 10px;
+}
+
+footer div nav ul li a:hover {
+    text-decoration: underline;
+    transition: 0.2s;
+    color: #7fb181;
+}
+
+ul .left {
+    border-right: 2px solid #ded7d7;
+}
+
+ul .right {
+    border-left: 2px solid #ded7d7;
+}
+
+footer p {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/*
+Responsividade
+*/
+
+@media (max-width: 1024px) {
+    main .main-content {
+        margin: 40px 30px;
+        padding: 40px 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    main .main-content {
+        margin: 30px 20px;
+        padding: 30px 40px;
+    }
+
+    /* Tabela */
+
+    /* Força a tabela, o corpo e as linhas a se comportarem como blocos (empilhados) */
+    .content-tabela table, 
+    .content-tabela thead, 
+    .content-tabela tbody, 
+    .content-tabela th, 
+    .content-tabela td, 
+    .content-tabela tr { 
+        display: block; 
+    }
+    /* Esconde o cabeçalho original (os nomes das colunas no topo) */
+    .content-tabela thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    /* Estiliza cada linha como um "Card" */
+    .content-tabela tr { 
+        border: 1px solid #7272729d;
+        margin-bottom: 15px;
+        border-radius: 2px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    /* Estiliza as células para mostrar o rótulo na esquerda e o valor na direita */
+    .content-tabela td { 
+        border: none;
+        border-bottom: 1px solid #7272729d; 
+        position: relative;
+        padding-right: 10px; /* Abre espaço para o rótulo na esquerda */
+        text-align: right;
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    /* Insere o nome da coluna usando o atributo data-label que criamos */
+    .content-tabela td::before { 
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 45%; 
+        padding-left: 10px; 
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    /* Remove a borda da última célula do card */
+    .content-tabela td:last-child {
+        border-bottom: 0;
+    }
+
+    /* Ajusta o caption (título da tabela) para mobile */
+    .content-tabela caption {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 570px) {
+    /* header */
+    header div {
+        flex-direction: column;
+    }
+
+    header span {
+        margin-bottom: 5px;
+    }
+
+    .nav-content {
+        width: 95%;
+    }
+
+    article {
+        font-size: 16px;
+    }
+
+    .img-container {
+        width: 90%;
+    }
+}
+    
+@media (max-width: 480px) {
+    main .main-content {
+        margin: 15px 10px;
+        padding: 25px 20px;
+    }
+
+    .content-tabela td {
+	    padding-right: 5px;
+    }
+
+    .content-tabela td::before {
+        left: 5px;
+        padding-left: 0px;
+    }
+
+    article {
+        font-size: 14px;
+    }
+
+    #content-logo {
+        padding: 10px 0px 0px 0px;
+    }
+    .img-container {
+        width: 100%;
+    }
+
+    /* footer */
+
+    footer div nav ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer div nav ul a {
+       border: none;
+       margin-bottom: 8px;
+    }
+
+    ul .left {
+        border: none;
+    }
+
+    ul .right {
+        border: none;
+    }
+}
