@@ -4,15 +4,22 @@ Este projeto é um exercício prático de desenvolvimento web focado na estrutur
 [!IMPORTANT]
 Esta página tem o objetivo de explorar HTML5 e CSS3 com o uso de tabelas, não tendo caráter informativo. O texto apresentado foi gerado com inteligência artificial e pode conter informações imprecisas ou incorretas.
 
-🚀 Tecnologias Utilizadas
-HTML5: Uso de tags semânticas (<article>, <section>, <nav>, <footer>) para melhor acessibilidade e SEO.
+📋 Funcionalidades
+Tabela Comparativa: Um histórico detalhado de preços com formatação específica para visualização de dados.
 
-Tabelas: Implementação de <table>, <caption>, <thead>, <tbody> e atributos data-label para garantir a legibilidade em dispositivos móveis.
+📷 Previews
+
+![Home](./Assets/previews/Home-preview-RAM.jpg)
+![Table](./Assets/previews/Table-preview-RAM.jpg)
+![Table-mobile](./Assets/previews/Mobile-table-preview-RAM.jpg)
+
+🚀 Tecnologias Utilizadas
+HTML5: Uso de tags semânticas (article, section, nav, footer) para melhor acessibilidade e SEO.
+
+Tabelas: Implementação de table, caption, thead, tbody e atributos data-label para garantir a legibilidade em dispositivos móveis.
 
 CSS3: Estilização personalizada, incluindo design responsivo para tabelas de dados.
 
-📋 Funcionalidades
-Tabela Comparativa: Um histórico detalhado de preços com formatação específica para visualização de dados.
 
 Design Responsivo: Adaptado para diferentes tamanhos de tela (viewport configurado).
 
